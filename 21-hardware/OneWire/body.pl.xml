@@ -1,0 +1,18 @@
+<article>
+<title>OneWire dla NPE (i nie tylko)</title>
+
+<p>Projekt stanowi implementację systemu odczytu temperatur poprzez magistralę 1wire i termometry z serii DS18b20 dla platformy <homepage url="http://www.a2s.pl/komputery-embedded-platforma-c-834_1933_107.html">NPE</homepage>. Na system skaładają się następujące pliki:</p>
+
+<ul>
+	<li><id_link id="1wire_temperatura-zabbix.c">1wire_temperatura-zabbix.c</id_link> - implementuje odczyt tempertury i wysłyanie jej do zabbixa</li>
+	<li><id_link id="1wire_temperatura.c">1wire_temperatura.c</id_link> - implementuje odczyt tempertury z termometru o adresie podanym w linii poleceń</li>
+	
+	<li><id_link id="1wire_rom.c">1wire_rom.c</id_link> - odczyt adresu urządzenia 1wire</li>
+	<li><id_link id="i2c-1wire.h">i2c-1wire.h</id_link> - funkcje do obsługi kontrolera 1wire z interfejsem i2c (DS2482)</li>
+	
+	<li><id_link id="zabbix.c">zabbix.c</id_link> i <id_link id="zabbix.h">zabbix.c</id_link> - implementacja sendera zabbixowego</li>
+	<li><id_link id="error_reporting.h">error_reporting.h</id_link> - plik nagłówkowy definiujący makra odpowiedzialne za wyświetlanie bądź zapisywanie do logu systemowego informacji zgłaszanych przez program</li>
+</ul>
+
+<p class="download"><a class="int" href="./one_wire.tgz">Pobierz</a></p>
+</article>
